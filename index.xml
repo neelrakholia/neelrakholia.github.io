@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Neel Rakholia</title>
-    <link>/</link>
+    <link>https://neelrakholia.github.io/</link>
     <description>Recent content on Neel Rakholia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Apr 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://neelrakholia.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Uttar Pradesh Legislative Assembly Elections</title>
-      <link>/2017/04/26/uttar-pradesh-legislative-assembly-elections-2017/</link>
+      <link>https://neelrakholia.github.io/2017/04/26/uttar-pradesh-legislative-assembly-elections-2017/</link>
       <pubDate>Wed, 26 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/04/26/uttar-pradesh-legislative-assembly-elections-2017/</guid>
+      <guid>https://neelrakholia.github.io/2017/04/26/uttar-pradesh-legislative-assembly-elections-2017/</guid>
       <description>Dataset The dataset for this analysis was obtained from Kaggle. It contains information about all candidates, their political affiliation, the number of votes they received, the names of constituencies, among other things.
  Background Uttar Pradesh (UP) is the largest state in India. In the recently concluded elections, 86.7 million votes were cast! That is nearly two-thirds of the number of votes cast in the 2016 US elections. State elections in this region are important for several reasons:</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://neelrakholia.github.io/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://neelrakholia.github.io/about/</guid>
       <description>Neel Rakholia is a first-year master&amp;rsquo;s student studying Data Science and Computational Mathematics at ICME, Stanford University. He is passionate about Machine Learning, Data Science, and more recently Data Visualization.</description>
     </item>
     
