@@ -2,7 +2,7 @@ baseurl = "https://neelrakholia.github.io/"
 relativeurls = true
 languageCode = "en-us"
 title = "Neel Rakholia"
-theme = "hugo-lithium-theme"
+theme = "hugo-tranquilpeak-theme"
 googleAnalytics = ""
 disqusShortname = ""
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
@@ -21,7 +21,7 @@ ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
     url = "https://twitter.com/neelrakholia/"
 
 [params]
-    description = "A website built through Hugo and blogdown."
+    description = ""
 
     # options for highlight.js (version, additional languages, and theme)
     highlightjsVersion = "9.10.0"
