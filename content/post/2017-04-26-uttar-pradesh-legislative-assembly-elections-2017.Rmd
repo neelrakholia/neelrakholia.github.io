@@ -1,5 +1,5 @@
 ---
-title: Uttar Pradesh Legislative Assembly Elections 2017
+title: Uttar Pradesh Legislative Assembly Elections
 author: Neel Rakholia
 date: '2017-04-26'
 slug: uttar-pradesh-legislative-assembly-elections-2017
@@ -63,8 +63,7 @@ election_data %>%
 election_data %>% 
   count(party) %>% 
   arrange(desc(n)) %>% 
-  select(Party = party, "Number of candidates" = n) %>% 
-  knitr::kable()
+  select(Party = party, "Number of candidates" = n) 
 ```
 
 A large number of candidates were either from smaller parties (other) or independents. BJP and BSP had exactly 403 candidates, the number of seats or constituencies in UP. On the other hand, only 311 candidates were affiliated with SP. INC had even fewer candidates: 114. The reason for this was a political alliance between INC and SP. Only 25 seats out of 403 had candidates from both INC and SP. All other constituencies had candidates from one party but not from both. 
@@ -78,7 +77,7 @@ election_data %>%
 
 ## Popular Vote and Election Results
 
-Much like national elections in the US, popular vote does not determine the outcome of state elections in India. They are determined by the number of seats a party wins. It is possible for a party to win without getting the popular vote. This was not the case for the 2017 UP elections however. BJP won more than 40% of the total vote. BSP got a slightly large fraction of the vote than SP. They received only a little more than 50% of BJP's votes. In a state historically dominated by regional parties, this was unprecedented. 
+Much like national elections in the US, popular vote does not determine the outcome of state elections in India. They are determined by the number of seats a party wins. It is possible for a party to win without getting the popular vote. This was not the case for the 2017 UP elections however. BJP won more than 40% of the total vote. BSP got a slightly larger fraction of the vote than SP but got fewer seats. These parties received only a little more than 50% of BJP's votes. In a state historically dominated by regional parties, this was unprecedented. 
 
 
 ```{r echo=FALSE, out.width = "75%", fig.align="center"}
@@ -109,12 +108,12 @@ election_data %>%
   count(party) %>% 
   arrange(desc(n)) %>% 
   rename("seats won" = n) %>% 
-  knitr::kable(align = "c")
+  knitr::kable(align = "c", format = "html")
 ```
 
 ## Margin of victory
 
-With such a landslide victory, one would expect BJP to also have large margins of victory. This was indeed the case. Their median margin of victory was over __13__%! The more suprising observation, however, was BSP's margin of victory. With their large share of popular vote (it was more than SP) and small share of seats, we would expect their margin of victory to be high in the seats that they won. However, their median margin of victory was even smaller than SP's median margin of victory. 
+With such a landslide electoral victory, one would have also expected BJP to have large margins of victory. This was indeed the case. Their median margin of victory was over __13__%! The more suprising observation, however, was BSP's margin of victory. With their large share of popular vote (it was more than SP) and small share of seats, we would expect their margin of victory to be high in the seats that they won. However, their median margin of victory was even smaller than SP's median margin of victory. 
 
 ```{r echo=FALSE, out.width = "75%", fig.align="center"}
 election_data %>% 
@@ -208,9 +207,9 @@ election_data %>%
   scale_y_continuous(labels = scales::percent)
 ```
 
-Most votes were cast in the earlier phases. Only 10% of all votes were cast in the final phase. However, the results were consistent across all phases
+Most votes were cast in the earlier phases. Only 10% of all votes were cast in the final phase. However, the results were largely consistent across all phases. 
 
-```{r echo=FALSE, out.width = "75%", fig.align="center"}
+```{r echo=FALSE, out.width = "75%", table.align="center"}
 election_data %>% 
   group_by(phase) %>% 
   ggplot(aes(as.factor(phase), votes)) +
