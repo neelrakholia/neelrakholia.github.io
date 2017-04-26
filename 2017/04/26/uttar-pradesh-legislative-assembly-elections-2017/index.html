@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.20.3" />
+
+
+<title>Uttar Pradesh Legislative Assembly Elections 2017 - Neel Rakholia</title>
+<meta property="og:title" content="Uttar Pradesh Legislative Assembly Elections 2017 - Neel Rakholia">
+
+
+
+  
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400|Lato:400,400italic,700">
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png" 
+         width="50" 
+         height="50" 
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/neelrakholia/">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/neelrakholia/">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">5 min read</span>
+    
+
+    <h1 class="article-title">Uttar Pradesh Legislative Assembly Elections 2017</h1>
+
+    
+    <span class="article-date">April 26, 2017</span>
+    
+
+    <div class="article-content">
+      <div id="dataset" class="section level2">
+<h2>Dataset</h2>
+<p>The dataset for this analysis was obtained from <a href="https://www.kaggle.com/ankit2106/uttar-pradesh-assembly-elections-2017">Kaggle</a>. It contains information about all candidates, their political affiliation, the number of votes they received, the names of constituencies, among other things.</p>
+</div>
+<div id="background" class="section level2">
+<h2>Background</h2>
+<p>Uttar Pradesh (UP) is the largest state in India. In the recently concluded elections, <strong>86.7</strong> million votes were cast! That is nearly two-thirds of the number of votes cast in the 2016 US elections. State elections in this region are important for several reasons:</p>
+<ul>
+<li>Population: With a population of over 200 million it is, by far, the most populous state in India. It is larger than most countries in the world!</li>
+<li>National political sentiment: Although Indian elections are complex democratic processes, the outcome of UP elections can help gauge the general political milieu of the country.</li>
+</ul>
+</div>
+<div id="political-parties" class="section level2">
+<h2>Political Parties</h2>
+<p>Unlike US elections, state elections in India have several political players. There are two major national parties: the BJP (Bhartiya Janta Party) and the INC (Indian National Congress). Additionally, UP also has two prominent regional parties that have dominated the political landscape in the past decade: BSP (Bahujan Samaj Party) and SP (Samajwadi Party). The dataset also contains information about smaller parties such as RLD (Rashtriya Lok Dal), independent candidates, candidates from other smaller parties, and candidates that do not belong to any of the aforementioned categories (NOA). The following plot highlights the number of candidates from each party taking part in the election.</p>
+<p><img src="../../../../post/2017-04-26-uttar-pradesh-legislative-assembly-elections-2017_files/figure-html/unnamed-chunk-4-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>A large number of candidates were either from smaller parties (other) or independents. BJP and BSP had exactly 403 candidates, the number of seats or constituencies in UP. On the other hand, only 311 candidates were affiliated with SP. INC had even fewer candidates: 114. The reason for this was a political alliance between INC and SP. Only 25 seats out of 403 had candidates from both INC and SP. All other constituencies had candidates from one party but not from both.</p>
+</div>
+<div id="popular-vote-and-election-results" class="section level2">
+<h2>Popular Vote and Election Results</h2>
+<p>Much like national elections in the US, popular vote does not determine the outcome of state elections in India. They are determined by the number of seats a party wins. It is possible for a party to win without getting the popular vote. This was not the case for the 2017 UP elections however. BJP won more than 40% of the total vote. BSP got a slightly large fraction of the vote than SP. They received only a little more than 50% of BJP’s votes. In a state historically dominated by regional parties, this was unprecedented.</p>
+<p><img src="../../../../post/2017-04-26-uttar-pradesh-legislative-assembly-elections-2017_files/figure-html/unnamed-chunk-7-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Even more surprising was the number of seats won by each party. BJP won 325 out the 403 available seats. Despite getting a larger share of the overall vote, BSP won only 19 seats compared to SP’s 47. Rarely had a political party received an outright majority in UP.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="center">party</th>
+<th align="center">seats won</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center">BJP+</td>
+<td align="center">325</td>
+</tr>
+<tr class="even">
+<td align="center">SP</td>
+<td align="center">47</td>
+</tr>
+<tr class="odd">
+<td align="center">BSP</td>
+<td align="center">19</td>
+</tr>
+<tr class="even">
+<td align="center">INC</td>
+<td align="center">7</td>
+</tr>
+<tr class="odd">
+<td align="center">Indep</td>
+<td align="center">3</td>
+</tr>
+<tr class="even">
+<td align="center">others</td>
+<td align="center">1</td>
+</tr>
+<tr class="odd">
+<td align="center">RLD</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="margin-of-victory" class="section level2">
+<h2>Margin of victory</h2>
+<p>With such a landslide victory, one would expect BJP to also have large margins of victory. This was indeed the case. Their median margin of victory was over <strong>13</strong>%! The more suprising observation, however, was BSP’s margin of victory. With their large share of popular vote (it more than SP) and small share of seats, we would expect their margin of victory to be high in the seats that they won. However, their median margin of victory was even smaller than SP’s median margin of victory.</p>
+<p><img src="../../../../post/2017-04-26-uttar-pradesh-legislative-assembly-elections-2017_files/figure-html/unnamed-chunk-9-1.png" width="75%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="the-curious-case-of-bsp" class="section level2">
+<h2>The curious case of BSP</h2>
+<p>Second highest share of popular vote but only a 5.8% share of the seats - BSP’s UP election performance was puzzling. SP on the other hand had a slightly lower share of popular vote, but a much larger share of seats: 11.7%. A reason for the descrepancy between popular votes and seats won was that BSP had 403 candidates contesting in the election as opposed to SP’s 311. So while the total number of votes was higher for BSP, the average number of votes per candidate was lower than SP.</p>
+<p><img src="../../../../post/2017-04-26-uttar-pradesh-legislative-assembly-elections-2017_files/figure-html/unnamed-chunk-10-1.png" width="75%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="a-story-of-phases" class="section level2">
+<h2>A story of phases</h2>
+<p>To handle such a large scale election, the election commission of India conducts the process in several stages. UP election 2017 was held in 7 phases. The phases corresponded to different geographical regions of the state.</p>
+<p><img src="../../../../post/2017-04-26-uttar-pradesh-legislative-assembly-elections-2017_files/figure-html/unnamed-chunk-13-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Most votes were cast in the earlier phases. Only 10% of all votes were cast in the final phase. However, the results were consistent across all phases</p>
+<p><img src="../../../../post/2017-04-26-uttar-pradesh-legislative-assembly-elections-2017_files/figure-html/unnamed-chunk-14-1.png" width="75%" style="display: block; margin: auto;" /></p>
+<p>Although BJP received the biggest fraction of vote across all phases, their margin of victory was vastly different. In phase 1 they received more than double the number of votes received by any other party. However, in phase 2 and phase 3, the race was much closer. The difference in the number of votes received by BJP and SP was a only few thousands! This is also reflected in the results. Phase 2 and phase 3 took place west UP where SP won a large percentage of their seats. (For more information see this <a href="https://en.wikipedia.org/wiki/Uttar_Pradesh_Legislative_Assembly_election,_2017">Wikipedia page</a>)</p>
+<p>Another interesting observation is the large fraction of votes for independent candidates in phase 4 and phase 6. Out of the three constituencies where independents won, two were part of phase 4 and one was part of phase 6.</p>
+</div>
+
+    </div>
+  </article>
+
+  
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
+
