@@ -1,36 +1,30 @@
-baseurl = "/"
-relativeurls = true
+baseurl = "https://example.org"
 languageCode = "en-us"
-title = "Neel Rakholia"
+title = "Lithium Theme"
 theme = "hugo-lithium-theme"
 googleAnalytics = ""
 disqusShortname = ""
-ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 
 [permalinks]
-    post = "/:year/:month/:day/:slug/"
+    post = "/:year/:month/:day/:title/"
+    page = "/:title/"
 
 [[menu.main]]
     name = "About"
     url = "/about/"
 [[menu.main]]
     name = "GitHub"
-    url = "https://github.com/neelrakholia"
+    url = ""
 [[menu.main]]
     name = "Twitter"
-    url = "https://twitter.com/neelrakholia"
+    url = ""
 
 [params]
-    description = "A website built through Hugo and blogdown."
-
-    # options for highlight.js (version, additional languages, and theme)
-    highlightjsVersion = "9.10.0"
-    highlightCDN = "//cdn.bootcss.com"
-    highlightjsLang = ["r", "yaml"]
-    highlightjsTheme = "github"
+    description = ""
 
     [params.logo]
     url = "logo.png"
     width = 50
     height = 50
     alt = "Logo"
+
