@@ -114,7 +114,7 @@ election_data %>%
 
 ## Margin of victory
 
-With such a landslide victory, one would expect BJP to also have large margins of victory. This was indeed the case. Their median margin of victory was over __13__%! The more suprising observation, however, was BSP's margin of victory. With their large share of popular vote (it more than SP) and small share of seats, we would expect their margin of victory to be high in the seats that they won. However, their median margin of victory was even smaller than SP's median margin of victory. 
+With such a landslide victory, one would expect BJP to also have large margins of victory. This was indeed the case. Their median margin of victory was over __13__%! The more suprising observation, however, was BSP's margin of victory. With their large share of popular vote (it was more than SP) and small share of seats, we would expect their margin of victory to be high in the seats that they won. However, their median margin of victory was even smaller than SP's median margin of victory. 
 
 ```{r echo=FALSE, out.width = "75%", fig.align="center"}
 election_data %>% 
