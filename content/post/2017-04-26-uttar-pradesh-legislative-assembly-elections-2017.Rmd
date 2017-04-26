@@ -209,7 +209,7 @@ election_data %>%
 
 Most votes were cast in the earlier phases. Only 10% of all votes were cast in the final phase. However, the results were largely consistent across all phases. 
 
-```{r echo=FALSE, out.width = "75%", table.align="center"}
+```{r echo=FALSE, fig.align="center"}
 election_data %>% 
   group_by(phase) %>% 
   ggplot(aes(as.factor(phase), votes)) +
